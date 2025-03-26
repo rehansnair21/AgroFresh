@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFresh - Transforming Agricultural Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #22c55e;
+            --primary-dark: #16a34a;
+            --secondary: #0ea5e9;
+            --accent: #f59e0b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #22c55e, #0ea5e9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.25rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .login-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.9rem 2.2rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.2);
+        }
+
+        .login-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.3);
+        }
+
+        .about-section {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(14, 165, 233, 0.05));
+        }
+
+        .about-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .mission-statement {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 2rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">𝑨𝑮𝑹𝑶 𝑭𝑹𝑬𝑺𝑯</div>
+            <div class="nav-links">
+                <a href="guest.php">Home</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h1>Empowering Agricultural Trade</h1>
+                <p class="mission-statement">
+                    AgroFresh is a cutting-edge digital marketplace revolutionizing how farmers, suppliers, and consumers connect. We leverage technology to create a transparent, efficient, and sustainable agricultural ecosystem.
+                </p>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Transparency</h3>
+                        <p>Ensuring fair trade practices through open communication and verifiable transactions.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Innovation</h3>
+                        <p>Utilizing advanced technologies to streamline agricultural trade and improve market access.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Sustainability</h3>
+                        <p>Promoting eco-friendly practices and reducing the environmental impact of agricultural trade.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Community</h3>
+                        <p>Building a supportive network that empowers farmers and connects global agricultural stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AgroFresh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
